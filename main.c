@@ -2,5 +2,5 @@
 
 void main()
 {
-  printf("ハゲー加藤 \nこのハゲー\n");
+  printf("ハロー加藤\n");
 }
