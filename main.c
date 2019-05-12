@@ -1,5 +1,6 @@
 #include <stdio.h>
- 
-void main(){
-    printf("ハローおじさん \n");
+
+void main()
+{
+  printf("ハロー小川 \n");
 }
