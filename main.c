@@ -13,8 +13,9 @@ int main(void) {
 
   int x ;
   x = 10 % 3 ; /* 1 */
-  x += 3 ;
-  x ++ ;
+  x += 3 ; /* 4 */
+  x ++ ; /* 5 */
+
 
   printf("%d です\n" , x );
   return 0;
