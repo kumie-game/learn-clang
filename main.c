@@ -1,23 +1,28 @@
 #include <stdio.h>
 
 /* 
-変数 : データにつけるラベル
-データ型
-int(整数) %d
-float(実数) %f
-char(1文字) %c
+条件分岐(if)
+>=(以上)
+<=(以下)
+>
+<
+(大きいor小さい)
+
+==(同じ)
+!=(等しくない)
 
  */
 
 int main(void) {
 
-  int x ;
-  x = 10 % 3 ; /* 1 */
-  x += 3 ; /* 4 */
-  x ++ ; /* 5 */
-
-
-  printf("%d です\n" , x );
+  int score = 80;
+  
+  if (score < 80){
+    printf("OK!\n");
+  } else if(score == 80){
+    printf("同じ\n");
+  }else {
+    printf("NG!\n");
+  }
   return 0;
-
 }
