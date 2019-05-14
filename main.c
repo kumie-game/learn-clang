@@ -1,28 +1,27 @@
 #include <stdio.h>
 
 /* 
-条件分岐(if)
->=(以上)
-<=(以下)
->
-<
-(大きいor小さい)
+条件分岐(switch)
+*/
 
-==(同じ)
-!=(等しくない)
-
- */
-
-int main(void) {
-
-  int score = 80;
+int main(void){
+  int rank = 20;
   
-  if (score < 80){
-    printf("OK!\n");
-  } else if(score == 80){
-    printf("同じ\n");
-  }else {
-    printf("NG!\n");
+  switch(rank){
+    case 1:
+      printf("Gold!\n");
+      break;
+    case 2:
+      printf("Silver!\n");
+      break;
+    case 3:
+      printf("Bronze!\n");
+      break;
+    default:
+      printf("no medal!\n");
+      break;
+
   }
-  return 0;
+
+
 }
