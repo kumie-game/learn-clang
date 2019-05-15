@@ -1,25 +1,33 @@
 #include <stdio.h>
 
 /* 
-ループ(for)
+ 関数 : 複数の処理
 
-continue; 一回スキップ
-break; ループを抜ける
+ 返り値の型　関数名(引数, ...){
+   処理;
+   return 返り値;
+ }
 */
+float getMax(float a, float b);
+/*プロトタイプ宣言*/
+
+void sayHi(void){
+    printf("hi!\n");
+}
 int main(void){
 
-  int m;
-  for (m = 0; m < 10; m++)
-  {
-    if (m == 3)
-    {
-      continue;
+  float result;
+  result = getMax(2.3 , 5.2);
+  printf("%f\n" , result);
+
+  sayHi();
+
+  return 0; 
+}
+float getMax(float a, float b){
+  if (a >= b){
+    return a;
+  } else {
+    return b;
     }
-    if (m == 8)
-    {
-      break;
-    }
-    printf("m %d\n", m);
-  }
-  return 0;
 }
