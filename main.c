@@ -1,27 +1,25 @@
 #include <stdio.h>
 
 /* 
-条件分岐(switch)
+ループ(for)
+
+continue; 一回スキップ
+break; ループを抜ける
 */
-
 int main(void){
-  int rank = 20;
-  
-  switch(rank){
-    case 1:
-      printf("Gold!\n");
-      break;
-    case 2:
-      printf("Silver!\n");
-      break;
-    case 3:
-      printf("Bronze!\n");
-      break;
-    default:
-      printf("no medal!\n");
-      break;
 
+  int m;
+  for (m = 0; m < 10; m++)
+  {
+    if (m == 3)
+    {
+      continue;
+    }
+    if (m == 8)
+    {
+      break;
+    }
+    printf("m %d\n", m);
   }
-
-
+  return 0;
 }
