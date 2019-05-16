@@ -2,13 +2,13 @@
 
 /*
 
-変数の有効範囲
+変数の有効期限
 
 */
-int a = 0; /*グローバル変数 */
+
 
 void f(void){
- /* int a = 0; (ローカル変数)*/
+ static int a = 0;  /*(静的変数*/
   a++;
   printf("a:%d\n" , a);
 
@@ -17,8 +17,8 @@ void f(void){
 int main(void){
 
   f();
-
-  printf("main:%d\n" , a);
+  f();
+  f();
 
   return 0;
 }
