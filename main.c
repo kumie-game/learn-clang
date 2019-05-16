@@ -1,24 +1,21 @@
 #include <stdio.h>
 
 /*
-
-変数の有効期限
-
+配列
 */
+int main(void)
+{
 
+  /* int sales[3];
 
-void f(void){
- static int a = 0;  /*(静的変数*/
-  a++;
-  printf("a:%d\n" , a);
+  sales[0] = 200;
+  sales[1] = 400;
+  sales[2] = 300;
+  sales[3] = 300; */
 
-}
+  int sales[3] = {200, 400, 300};
 
-int main(void){
-
-  f();
-  f();
-  f();
+  printf("%d\n", sales[2]);
 
   return 0;
 }
