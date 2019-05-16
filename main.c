@@ -1,42 +1,23 @@
 #include <stdio.h>
 
 /*
-test comment
-*/
-/* 
- 関数 : 複数の処理
+文字列 : charの配列(※ 終端 「\0」)
 
- 返り値の型　関数名(引数, ...){
-   処理;
-   return 返り値;
- }
-*/
-float getMax(float a, float b);
-/*プロトタイプ宣言*/
+int i;
 
-void sayHi(void)
-{
-  printf("hi!\n");
-}
+× string s;
+
+char s[] = {'a' , 'b' , 'c' , '\0'};
+char s[] = "abc";
+char s[4] = "abc";
+
+*/
+
 int main(void)
 {
+  char s[] = "abc";
 
-  float result;
-  result = getMax(2.3, 5.2);
-  printf("%f\n", result);
-
-  sayHi();
+  printf("%c\n", s[1]);
 
   return 0;
-}
-float getMax(float a, float b)
-{
-  if (a >= b)
-  {
-    return a;
-  }
-  else
-  {
-    return b;
-  }
 }
