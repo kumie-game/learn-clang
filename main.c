@@ -1,23 +1,28 @@
 #include <stdio.h>
 
 /*
-文字列 : charの配列(※ 終端 「\0」)
+ポインタ 
 
-int i;
-
-× string s;
-
-char s[] = {'a' , 'b' , 'c' , '\0'};
-char s[] = "abc";
-char s[4] = "abc";
+値渡し
+参照渡し
 
 */
+void swap(int *pa, int *pb)
+{
+  int tmp;
+  tmp = *pa;
+  *pa = *pb;
+  *pb = tmp;
+
+
+}
 
 int main(void)
 {
-  char s[] = "abc";
-
-  printf("%c\n", s[1]);
+  int a = 5;
+  int b = 10;
+  swap(&a, &b);
+  printf("a:%d, b:%d\n", a, b);
 
   return 0;
 }
