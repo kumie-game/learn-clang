@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 /*
-文字列 : charの配列(※ 終端 「\0」)
+ポインタ : アドレスを格納するための変数
 
-int i;
+メモリ (記憶領域)
 
-× string s;
+& : アドレス演算子
 
-char s[] = {'a' , 'b' , 'c' , '\0'};
-char s[] = "abc";
-char s[4] = "abc";
+* : 間接演算子
 
 */
 
 int main(void)
 {
-  char s[] = "abc";
+  int a;
+  a = 10;
 
-  printf("%c\n", s[1]);
+  int *pa;
+  pa = &a;
+
+  printf("%d\n", *pa);
 
   return 0;
 }
