@@ -1,18 +1,28 @@
 #include <stdio.h>
 
 /*
-ポインタ : メモリの節約
+ポインタ 
+
+値渡し
+参照渡し
 
 */
-void f(long *pa)
+void swap(int *pa, int *pb)
 {
-  *pa = *pa + 100;
-  printf("%ld\n", *pa);
+  int tmp;
+  tmp = *pa;
+  *pa = *pb;
+  *pb = tmp;
+
+
 }
+
 int main(void)
 {
-  long a = 1000;
-  f(&a);
+  int a = 5;
+  int b = 10;
+  swap(&a, &b);
+  printf("a:%d, b:%d\n", a, b);
 
   return 0;
 }
